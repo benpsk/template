@@ -1,5 +1,6 @@
 :root {
   --sidebar-width: 15%;
+  --sidebar-width-close: 60px;
 }
 html {
   box-sizing: border-box;
@@ -13,7 +14,9 @@ html {
   background-color: rgb(220, 220, 220);
   width: var(--sidebar-width);
 }
-
+.sidebar-collape {
+  width: var(--sidebar-width-close);
+}
 .sidebar .header-logo {
   margin-right: 6px;
 }
@@ -25,9 +28,11 @@ html {
   background-color: #a19f9f;
   color: #ffffff;
 }
-
 .main-content {
   margin-left: var(--sidebar-width);
+}
+.main-content-collape {
+  margin-left: var(--sidebar-width-close);
 }
 .sidebar::-webkit-scrollbar {
   width: 4px;
@@ -36,12 +41,10 @@ html {
   background-color: rgb(191, 191, 191);
   border-radius: 10px;
 }
-
 .sidebar h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
-
 .sidebar ul {
   list-style: none;
   margin: 0;
@@ -67,13 +70,18 @@ html {
   background-color: rgb(191, 191, 191);
 }
 
-#menu-bar {
+.menu-bar {
   position: sticky;
   top: 10px;
   left: calc(var(--sidebar-width) + 4px);
   width: 25px;
   cursor: pointer;
 }
+
+.menu-bar-close {
+  left: calc(var(--sidebar-width-close) + 4px);
+}
+
 .bar {
   height: 3px;
   width: 100%;
