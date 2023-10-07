@@ -66,3 +66,35 @@ html {
 .sidebar a:hover {
   background-color: rgb(191, 191, 191);
 }
+
+#menu-bar {
+  position: sticky;
+  top: 10px;
+  left: calc(var(--sidebar-width) + 4px);
+  width: 25px;
+  cursor: pointer;
+}
+.bar {
+  height: 3px;
+  width: 100%;
+  background-color: #ca6a6a;
+  border-radius: 2px;
+}
+#bar1 {
+  transform: translateY(-4px);
+}
+#bar3 {
+  transform: translateY(4px);
+}
+.change {
+  display: block;
+}
+.change #bar1 {
+  transform: translateY(4px) rotateZ(-40deg);
+}
+.change #bar2 {
+  opacity: 0;
+}
+.change #bar3 {
+  transform: translateY(-2px) rotateZ(40deg);
+}
