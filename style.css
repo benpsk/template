@@ -112,3 +112,6 @@ html {
 .header-title-hide {
   display: none;
 }
+.menu-text {
+  padding-left: 8px;
+}
