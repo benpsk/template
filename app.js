@@ -1,6 +1,8 @@
-function menuOnClick() {
+const themeToggleSidebar = () => {
   console.log("menuOnClick");
-  document.querySelector(".theme-sidebar-toggler").classList.toggle("theme-sidebar-toggler-close");
+  document
+    .querySelector(".theme-sidebar-toggler")
+    .classList.toggle("theme-sidebar-toggler-close");
   document
     .querySelector(".theme-sidebar")
     .classList.toggle("theme-sidebar-toggle");
@@ -11,8 +13,8 @@ function menuOnClick() {
     item.classList.toggle("menu-text-hide");
   });
   document.querySelector(".header-title").classList.toggle("header-title-hide");
-}
+};
 window.addEventListener("DOMContentLoaded", (event) => {
-  const themeMenuBar = document.querySelector(".theme-sidebar-toggler");
-  themeMenuBar.addEventListener("click", menuOnClick);
+  const themeSidebarToggler = document.querySelector(".theme-sidebar-toggler");
+  themeSidebarToggler.addEventListener("click", themeToggleSidebar);
 });
