@@ -7,8 +7,8 @@ const themeToggleSidebar = () => {
     .querySelector(".theme-sidebar")
     .classList.toggle("theme-sidebar-toggle");
   document
-    .querySelector(".main-content")
-    .classList.toggle("main-content-collape");
+    .querySelector(".theme-main-content")
+    .classList.toggle("theme-main-content-toggle");
   document.querySelectorAll(".menu-text").forEach((item) => {
     item.classList.toggle("menu-text-hide");
   });

@@ -28,10 +28,10 @@ html {
   background-color: #a19f9f;
   color: #ffffff;
 }
-.main-content {
+.theme-main-content {
   margin-left: var(--theme-sidebar-width);
 }
-.main-content-collape {
+.theme-main-content-toggle {
   margin-left: var(--theme-sidebar-width-toggle);
 }
 .theme-sidebar::-webkit-scrollbar {
@@ -82,28 +82,28 @@ html {
   left: calc(var(--theme-sidebar-width-toggle) + 4px);
 }
 
-.bar {
+.theme-bar {
   height: 3px;
   width: 100%;
   background-color: #ca6a6a;
   border-radius: 2px;
 }
-#bar1 {
+#theme-bar1 {
   transform: translateY(-4px);
 }
-#bar3 {
+#theme-bar3 {
   transform: translateY(4px);
 }
 .change {
   display: block;
 }
-.change #bar1 {
+.change #theme-bar1 {
   transform: translateY(4px) rotateZ(-40deg);
 }
 .change #bar2 {
   opacity: 0;
 }
-.change #bar3 {
+.change #theme-bar3 {
   transform: translateY(-2px) rotateZ(40deg);
 }
 .menu-text-hide {
