@@ -1,5 +1,4 @@
 const themeToggleSidebar = () => {
-  console.log("menuOnClick");
   document
     .querySelector(".theme-sidebar-toggler")
     .classList.toggle("theme-sidebar-toggler-close");
