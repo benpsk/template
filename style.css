@@ -1,26 +1,26 @@
 :root {
-  --sidebar-width: 15%;
-  --sidebar-width-close: 60px;
+  --theme-sidebar-width: 15%;
+  --theme-sidebar-width-toggle: 60px;
 }
 html {
   box-sizing: border-box;
 }
-.sidebar {
+.theme-sidebar {
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
   overflow-y: auto;
   background-color: rgb(220, 220, 220);
-  width: var(--sidebar-width);
+  width: var(--theme-sidebar-width);
 }
-.sidebar-collape {
-  width: var(--sidebar-width-close);
+.theme-sidebar-toggle {
+  width: var(--theme-sidebar-width-toggle);
 }
-.sidebar .header-logo {
+.theme-sidebar .header-logo {
   margin-right: 6px;
 }
-.sidebar .header {
+.theme-sidebar .header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,35 +29,35 @@ html {
   color: #ffffff;
 }
 .main-content {
-  margin-left: var(--sidebar-width);
+  margin-left: var(--theme-sidebar-width);
 }
 .main-content-collape {
-  margin-left: var(--sidebar-width-close);
+  margin-left: var(--theme-sidebar-width-toggle);
 }
-.sidebar::-webkit-scrollbar {
+.theme-sidebar::-webkit-scrollbar {
   width: 4px;
 }
-.sidebar::-webkit-scrollbar-thumb {
+.theme-sidebar::-webkit-scrollbar-thumb {
   background-color: rgb(191, 191, 191);
   border-radius: 10px;
 }
-.sidebar h2 {
+.theme-sidebar h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
-.sidebar ul {
+.theme-sidebar ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.sidebar .icon {
+.theme-sidebar .icon {
   margin-right: 10px;
   font-size: 1.2em;
   margin-left: 20px;
 }
 
-.sidebar a {
+.theme-sidebar a {
   display: flex;
   align-items: center;
   color: #333;
@@ -66,20 +66,20 @@ html {
   width: 100%;
 }
 
-.sidebar a:hover {
+.theme-sidebar a:hover {
   background-color: rgb(191, 191, 191);
 }
 
-.menu-bar {
+.theme-sidebar-toggler {
   position: sticky;
   top: 10px;
-  left: calc(var(--sidebar-width) + 4px);
+  left: calc(var(--theme-sidebar-width) + 4px);
   width: 25px;
   cursor: pointer;
 }
 
-.menu-bar-close {
-  left: calc(var(--sidebar-width-close) + 4px);
+.theme-sidebar-toggler-close {
+  left: calc(var(--theme-sidebar-width-toggle) + 4px);
 }
 
 .bar {

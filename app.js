@@ -1,7 +1,9 @@
 function menuOnClick() {
   console.log("menuOnClick");
-  document.querySelector(".menu-bar").classList.toggle("menu-bar-close");
-  document.querySelector(".sidebar").classList.toggle("sidebar-collape");
+  document.querySelector(".theme-sidebar-toggler").classList.toggle("theme-sidebar-toggler-close");
+  document
+    .querySelector(".theme-sidebar")
+    .classList.toggle("theme-sidebar-toggle");
   document
     .querySelector(".main-content")
     .classList.toggle("main-content-collape");
@@ -10,3 +12,7 @@ function menuOnClick() {
   });
   document.querySelector(".header-title").classList.toggle("header-title-hide");
 }
+window.addEventListener("DOMContentLoaded", (event) => {
+  const themeMenuBar = document.querySelector(".theme-sidebar-toggler");
+  themeMenuBar.addEventListener("click", menuOnClick);
+});
