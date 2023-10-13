@@ -9,10 +9,10 @@ const themeToggleSidebar = () => {
   document
     .querySelector(".theme-main-content")
     .classList.toggle("theme-main-content-toggle");
-  document.querySelectorAll(".menu-text").forEach((item) => {
-    item.classList.toggle("menu-text-hide");
+  document.querySelectorAll(".theme-menu-text").forEach((item) => {
+    item.classList.toggle("theme-menu-text-toggle");
   });
-  document.querySelector(".header-title").classList.toggle("header-title-hide");
+  document.querySelector(".theme-header-title").classList.toggle("theme-header-title-toggle");
 };
 window.addEventListener("DOMContentLoaded", (event) => {
   const themeSidebarToggler = document.querySelector(".theme-sidebar-toggler");

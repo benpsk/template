@@ -17,10 +17,10 @@ html {
 .theme-sidebar-toggle {
   width: var(--theme-sidebar-width-toggle);
 }
-.theme-sidebar .header-logo {
+.theme-sidebar .theme-header-logo {
   margin-right: 6px;
 }
-.theme-sidebar .header {
+.theme-sidebar .theme-header {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -94,24 +94,12 @@ html {
 #theme-bar3 {
   transform: translateY(4px);
 }
-.change {
-  display: block;
-}
-.change #theme-bar1 {
-  transform: translateY(4px) rotateZ(-40deg);
-}
-.change #bar2 {
-  opacity: 0;
-}
-.change #theme-bar3 {
-  transform: translateY(-2px) rotateZ(40deg);
-}
-.menu-text-hide {
+.theme-menu-text-toggle {
   display: none;
 }
-.header-title-hide {
+.theme-header-title-toggle {
   display: none;
 }
-.menu-text {
+.theme-menu-text {
   padding-left: 8px;
 }
