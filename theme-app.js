@@ -11,9 +11,15 @@ const themeToggleSidebar = () => {
   document.querySelectorAll(".theme-menu-text").forEach((item) => {
     item.classList.toggle("theme-menu-text-toggle");
   });
-  document.querySelector(".theme-header-title").classList.toggle("theme-header-title-toggle");
+  document
+    .querySelector(".theme-header-title")
+    .classList.toggle("theme-header-title-toggle");
 };
 window.addEventListener("DOMContentLoaded", (event) => {
-  const themeSidebarToggler = document.querySelector(".theme-sidebar-toggler");
-  themeSidebarToggler.addEventListener("click", themeToggleSidebar);
+  document
+    .querySelector(".theme-sidebar-toggler")
+    .addEventListener("click", themeToggleSidebar);
+  if (window.innerWidth <= 768) {
+    themeToggleSidebar();
+  }
 });
