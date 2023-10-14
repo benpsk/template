@@ -1,25 +1,39 @@
+const toggleClass = (selector, className) => {
+  document.querySelectorAll(selector).forEach((item) => {
+    item.classList.toggle(className);
+  });
+};
 const themeToggleSidebar = () => {
+  toggleClass(".theme-sidebar-toggler", "theme-sidebar-toggler-toggle");
+  toggleClass(".theme-sidebar", "theme-sidebar-toggle");
+  toggleClass(".theme-main-content", "theme-main-content-toggle");
+  toggleClass(".theme-menu-text", "theme-menu-text-toggle");
+  toggleClass(".theme-header-title", "theme-header-title-toggle");
+  removeClassWithDelay();
+};
+const addClassOnHover = () => {
   document
     .querySelector(".theme-sidebar-toggler")
-    .classList.toggle("theme-sidebar-toggler-close");
-  document
-    .querySelector(".theme-sidebar")
-    .classList.toggle("theme-sidebar-toggle");
-  document
-    .querySelector(".theme-main-content")
-    .classList.toggle("theme-main-content-toggle");
-  document.querySelectorAll(".theme-menu-text").forEach((item) => {
-    item.classList.toggle("theme-menu-text-toggle");
-  });
-  document
-    .querySelector(".theme-header-title")
-    .classList.toggle("theme-header-title-toggle");
+    .classList.add("theme-sidebar-toggler-show");
 };
-window.addEventListener("DOMContentLoaded", (event) => {
+let timer;
+const removeClassWithDelay = () => {
+  if (timer) {
+    clearTimeout(timer);
+  }
+  timer = setTimeout(() => {
+    toggleClass(".theme-sidebar-toggler", "theme-sidebar-toggler-show");
+  }, 5000);
+};
+
+document.addEventListener("DOMContentLoaded", () => {
   document
     .querySelector(".theme-sidebar-toggler")
     .addEventListener("click", themeToggleSidebar);
   if (window.innerWidth <= 768) {
     themeToggleSidebar();
   }
+  const themeSidebar = document.querySelector(".theme-sidebar");
+  themeSidebar.addEventListener("mouseenter", addClassOnHover);
+  themeSidebar.addEventListener("mouseleave", removeClassWithDelay);
 });
