@@ -1,6 +1,6 @@
 <nav class="theme-sidebar">
 	<div class="theme-header">
-		<x-application-logo class="h-9 w-auto fill-current m-2 text-white" />
+		<x-application-logo class="h-9 w-auto fill-current m-2 text-white ms-0" />
 		<h1 class="theme-header-title">My Menu</h1>
 	</div>
 	<ul>
