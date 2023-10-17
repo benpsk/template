@@ -1,6 +1,6 @@
 <nav class="theme-sidebar">
 	<div class="theme-header">
-		<img alt="Placeholder Image" class="theme-header-logo" src="https://via.placeholder.com/40" />
+		<x-application-logo class="h-9 w-auto fill-current m-2 text-white" />
 		<h1 class="theme-header-title">My Menu</h1>
 	</div>
 	<ul>
@@ -13,39 +13,8 @@
 				<span class="theme-icon">&#x1F600;</span><span class="theme-menu-text">About</span></a>
 		</li>
 		<li>
-			<a href="#contact"><span class="theme-icon">&#x1F600;</span><span class="theme-menu-text">Contact</span></a>
-		</li>
-		<li>
-			<a href="#home"><span class="theme-icon">&#x1F600;</span>
-				<span class="theme-menu-text">Home</span></a>
-		</li>
-		<li>
 			<a href="#about">
-				<span class="theme-icon">&#x1F600;</span><span class="theme-menu-text">About</span></a>
-		</li>
-		<li>
-			<a href="#contact"><span class="theme-icon">&#x1F600;</span><span class="theme-menu-text">Contact</span></a>
-		</li>
-		<li>
-			<a href="#home"><span class="theme-icon">&#x1F600;</span>
-				<span class="theme-menu-text">Home</span></a>
-		</li>
-		<li>
-			<a href="#about"><span class="theme-icon">&#x1F600;</span><span class="theme-menu-text">About</span></a>
-		</li>
-		<li>
-			<a href="#contact"><span class="theme-icon">&#x1F600;</span><span class="theme-menu-text">Contact</span></a>
-		</li>
-		<li>
-			<a href="#home"><span class="theme-icon">&#x1F600;</span>
-				<span class="theme-menu-text">Home</span></a>
-		</li>
-		<li>
-			<a href="#about">
-				<span class="theme-icon">&#x1F600;</span><span class="theme-menu-text">About</span></a>
-		</li>
-		<li>
-			<a href="#contact"><span class="theme-icon">&#x1F600;</span><span class="theme-menu-text">Contact</span></a>
+				<span class="theme-icon">&#x1F600;</span><span class="theme-menu-text">Contact</span></a>
 		</li>
 	</ul>
 </nav>
