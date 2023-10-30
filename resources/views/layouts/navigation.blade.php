@@ -1,7 +1,8 @@
 <nav class="theme-sidebar">
 	<div class="theme-header">
-		<x-application-logo class="h-9 w-auto fill-current m-2 text-white ms-0" />
+		<x-application-logo class="m-2 ms-0 h-9 w-auto fill-current text-white" />
 		<h1 class="theme-header-title">My Menu</h1>
+		@include("layouts.toggler")
 	</div>
 	<ul>
 		<li>
