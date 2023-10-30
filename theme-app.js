@@ -4,7 +4,6 @@ const toggleClass = (selector, className) => {
   });
 };
 const themeToggleSidebar = () => {
-  toggleClass(".theme-sidebar-toggler", "theme-sidebar-toggler-toggle");
   toggleClass(".theme-sidebar", "theme-sidebar-toggle");
   toggleClass(".theme-main-content", "theme-main-content-toggle");
   toggleClass(".theme-menu-text", "theme-menu-text-toggle");
