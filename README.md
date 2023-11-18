@@ -1,4 +1,6 @@
 # Admin Frame / Sidebar
+Sample link - http://benpsk.github.io/template/
+
 ![image info](./support/00.png)
 ![image info](./support/01.png)
 No libraries, no frameworks, just pure HTML, CSS, and a bit of vanilla JavaScript.
