@@ -75,6 +75,8 @@ html {
   width: 18px;
   cursor: pointer;
   transition: display 10s;
+  padding: 8px 0 8px 4px;
+  margin: 0;
   display: none;
 }
 .theme-sidebar-toggler-show {
